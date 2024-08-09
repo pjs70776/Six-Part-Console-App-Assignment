@@ -36,7 +36,7 @@ namespace Six_Part_Console_App_Assignment
 
             //    Console.ReadLine();
 
-            
+
 
 
             ////PART 2
@@ -126,24 +126,24 @@ namespace Six_Part_Console_App_Assignment
 
             //PART 6
             //A list of strings that has at least two identical strings in the list
-            //List<string> letters = new List<string>() { "A", "B", "B", "C" };
-            //List<string> duplicateLetters = new List<string>();
+            List<string> letters = new List<string>() { "A", "B", "B", "C" };
+            List<string> duplicateLetters = new List<string>();
 
-            ////foreach loop that evaluates each item in the list, and displays a message showing the string and whether or not it has already appeared in the list.
-            //foreach (string letter in letters)
-            //{
-            //    if (duplicateLetters.Contains(letter))
-            //        {
-            //        Console.WriteLine(letter + " - this item is a duplicate");
-            //    }
-            //    else 
-            //        {
-            //        Console.WriteLine(letter + " - this item is unique");
-            //        duplicateLetters.Add(letter);
-            //    }
-            //    //Console.WriteLine(i);
-            //}
-            //Console.ReadLine();
+            //foreach loop that evaluates each item in the list, and displays a message showing the string and whether or not it has already appeared in the list.
+            foreach (string letter in letters)
+            {
+                if (duplicateLetters.Contains(letter))
+                {
+                    Console.WriteLine(letter + " - this item is a duplicate");
+                }
+                else
+                {
+                    Console.WriteLine(letter + " - this item is unique");
+                    duplicateLetters.Add(letter);
+                }
+                //Console.WriteLine(i);
+            }
+            Console.ReadLine();
         }
 
     }
