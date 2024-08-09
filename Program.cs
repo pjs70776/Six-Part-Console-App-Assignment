@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,7 +36,7 @@ namespace Six_Part_Console_App_Assignment
 
             //    Console.ReadLine();
 
-            //***i need to make the 's are cool attach to every string***
+            
 
 
             ////PART 2
@@ -74,52 +75,79 @@ namespace Six_Part_Console_App_Assignment
 
             //PART 4
             //A list of strings where each item in the list is unique.
-            List<string> cars = new List<string>();
-            cars.Add("Camaro");
-            cars.Add("Mustang");
-            cars.Add("Challenger");
+            //List<string> cars = new List<string>() { "Camaro", "Mustang", "Challenger" };
 
-            //Ask the user to input text to search for in the list.
-            Console.WriteLine("To search for an American Muscle car, please enter the model here. The index of the car will be displayed.");
-            
+            ////Ask the user to input text to search for in the list.
+            //Console.WriteLine("Please choose and type one of the following: Camaro, Mustang, Challenger");
+            //string car = Console.ReadLine();
 
-            //A loop that iterates through the list and then displays the index of the list item that contains matching text on the screen.
-            for (int i = 0; i < cars.Count; i++)  //**need help figuring this step out
-            {
-                // Get element at this index.
-                string value = cars[i];
-                // Display with string interpolation.
-                Console.WriteLine($"Value {i}: {value}");
-                Console.ReadLine();
-
-                //Code to check if user input is on the list
-                foreach (string car in cars)
-                {
-                    if (car == "Camaro" || car == "Mustang" || car == "Challenger")
-                    {
-                        Console.WriteLine("Your have chosen: " + car);
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("The car you chose is not on the list");
-                        break;
-                    }
-                }
-
-                //PART 5
-                //A list of strings that has at least two identical strings in the list. Ask the user to select text to search for in the list.
-                //List<string> subjects = new List<string>() { "English", "Math", "English", "History" };
-                //    Console.WriteLine("Select text to search for in the list");
+            //bool carFound = false;
+            ////A loop that iterates through the list and then displays the index of the list item that contains matching text on the screen.
+            //for (int i = 0; i < cars.Count; i++) 
+            //{
+            //    if (cars[i].Equals(car, StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        Console.WriteLine($"You have chosen: '{cars[i]}' in index {i}.");
+            //        carFound = true;
+            //        break;
+            //    }
+            //}
+            //if (!carFound)
+            //{
+            //    Console.WriteLine("Car is not on the list.");
+            //}
+            //Console.ReadLine();
 
 
+            //PART 5
+            //A list of strings that has at least two identical strings in the list
+            //List<string> subjects = new List<string>() { "Math", "Math", "History", "Science" };
 
-                //    Console.ReadLine();
+            ////Ask the user to input text to search for in the list.
+            //Console.WriteLine("Please choose and type one of the following: Math, History, Science.");
+            //string selectedSubject = Console.ReadLine();
 
+            //bool subjectFound = false;
+            ////A loop that iterates through the list and then displays the index of the list item that contains matching text on the screen.
+            //for (int i = 0; i < subjects.Count; i++)
+            //{
+            //    if (subjects[i].Equals(selectedSubject, StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        Console.WriteLine($"You have chosen: '{selectedSubject[i]}' in index {i}.");
+            //        subjectFound = true;
+            //        break;
+            //    }
+            //}
+            //if (!subjectFound)
+            //{
+            //    Console.WriteLine("Subject is not on the list.");
+            //}
+            //Console.ReadLine();
 
+            //PART 6
+            //A list of strings that has at least two identical strings in the list
+            //List<string> letters = new List<string>() { "A", "B", "B", "C" };
+            //List<string> duplicateLetters = new List<string>();
 
-            }
-
+            ////foreach loop that evaluates each item in the list, and displays a message showing the string and whether or not it has already appeared in the list.
+            //foreach (string letter in letters)
+            //{
+            //    if (duplicateLetters.Contains(letter))
+            //        {
+            //        Console.WriteLine(letter + " - this item is a duplicate");
+            //    }
+            //    else 
+            //        {
+            //        Console.WriteLine(letter + " - this item is unique");
+            //        duplicateLetters.Add(letter);
+            //    }
+            //    //Console.WriteLine(i);
+            //}
+            //Console.ReadLine();
         }
+
     }
-}
+    }
+
+
+
